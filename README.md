@@ -114,14 +114,11 @@ i.e. a ≈ 3.5 dB gain over the conventional decoder.
 
 ## Acknowledgement
 
-The data loading and the LoRaPHY baseline decoder in `evaluate.py` are adapted from
-[NELoRa-Bench](https://github.com/daibiaoxuwu/NeLoRa_Dataset), and `data/sf7_sample.pkl` contains
-LoRa symbols from its dataset. The LoRaPHY baseline follows the demodulation in
-[LoRaPHY](https://github.com/jkadbear/LoRaPHY).
-The `TinyTimeMixerMLP` and `TinyTimeMixerBatchNorm` layers in `snr_models.py` are adapted from
-[TinyTimeMixer](https://github.com/ibm-granite/granite-tsfm) (Apache 2.0), and the ChirpMixer head
-follows the design of [MLP-Mixer](https://arxiv.org/abs/2105.01601).
-We sincerely thank the authors for releasing their code and data.
+This codebase builds on [NELoRa](https://github.com/hanqingguo/NELoRa-Sensys) and
+[NELoRa-Bench](https://github.com/daibiaoxuwu/NeLoRa_Dataset), whose data and evaluation code we use.
+The mixer layers are based on [TinyTimeMixer](https://github.com/ibm-granite/granite-tsfm) and
+[MLP-Mixer](https://arxiv.org/abs/2105.01601).
+We sincerely thank the authors for their inspiring work.
 
 ## License
 
