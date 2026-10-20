@@ -1,7 +1,7 @@
 # SAM-Mixer
 
 **Taming SNR Heterogeneity: Adaptive Expert Routing for Weak LoRa Signal Decoding**<br>
-[Shuo Yan](https://yanshuo1992.github.io/), [Ningning Hou](https://ningning-hou.github.io/homepage/), Qiang Yang<br>
+[Shuo Yan](https://yanshuo1992.github.io/), [Ningning Hou](https://ningning-hou.github.io/homepage/), [Qiang Yang](https://www.cl.cam.ac.uk/~qy258/)<br>
 IEEE International Conference on Network Protocols (ICNP) 2026, Tempe, Arizona, USA
 
 [Project page](https://yanshuo1992.github.io/sam-mixer/)
@@ -111,20 +111,6 @@ the dataset root instead of `--cache`.
 On the supplied SF=7 sample, you should see SAM-Mixer reach an SNR@10% near
 **-18.9 dB** (vs. roughly **-15.4 dB** for LoRaPHY in our paper experiments),
 i.e. a ≈ 3.5 dB gain over the conventional decoder.
-
-## Citation
-
-If you find this work useful, please cite:
-
-```bibtex
-@inproceedings{yan2026taming,
-  title     = {Taming {SNR} Heterogeneity: Adaptive Expert Routing for Weak {LoRa} Signal Decoding},
-  author    = {Yan, Shuo and Hou, Ningning and Yang, Qiang},
-  booktitle = {Proceedings of the 34th IEEE International Conference on Network Protocols (ICNP)},
-  address   = {Tempe, AZ, USA},
-  year      = {2026}
-}
-```
 
 ## License
 
