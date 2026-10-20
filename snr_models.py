@@ -87,6 +87,10 @@ class ASPP_1D_Dilation(nn.Module):
         return self.project(out)
 
 
+# TinyTimeMixerMLP and TinyTimeMixerBatchNorm are adapted from TinyTimeMixer in IBM granite-tsfm
+# (https://github.com/ibm-granite/granite-tsfm, Apache License 2.0), which builds on PatchTSMixer in
+# Hugging Face Transformers. Changes: hyperparameters are passed directly instead of a config object,
+# the MLP can apply batch norm to its input, and the batch norm operates on [B, C, F, T] tensors.
 class TinyTimeMixerMLP(nn.Module):
     def __init__(self, in_features, out_features, expansion_factor=4,
                  dropout_p=0.1, bn=False):

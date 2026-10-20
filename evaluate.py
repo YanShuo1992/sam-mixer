@@ -49,6 +49,8 @@ def load_config(path):
         return yaml.safe_load(f)
 
 
+# make_downchirp, decode_loraphy and load_data are adapted from main.py in NELoRa-Bench
+# (https://github.com/daibiaoxuwu/NeLoRa_Dataset); decode_loraphy is its LoRaPHY baseline.
 def make_downchirp(sf, bw, fs):
     num_classes = 2 ** sf
     num_samples = int(num_classes * fs / bw)

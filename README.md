@@ -112,6 +112,17 @@ On the supplied SF=7 sample, you should see SAM-Mixer reach an SNR@10% near
 **-18.9 dB** (vs. roughly **-15.4 dB** for LoRaPHY in our paper experiments),
 i.e. a ≈ 3.5 dB gain over the conventional decoder.
 
+## Acknowledgement
+
+The data loading and the LoRaPHY baseline decoder in `evaluate.py` are adapted from
+[NELoRa-Bench](https://github.com/daibiaoxuwu/NeLoRa_Dataset), and `data/sf7_sample.pkl` contains
+LoRa symbols from its dataset. The LoRaPHY baseline follows the demodulation in
+[LoRaPHY](https://github.com/jkadbear/LoRaPHY).
+The `TinyTimeMixerMLP` and `TinyTimeMixerBatchNorm` layers in `snr_models.py` are adapted from
+[TinyTimeMixer](https://github.com/ibm-granite/granite-tsfm) (Apache 2.0), and the ChirpMixer head
+follows the design of [MLP-Mixer](https://arxiv.org/abs/2105.01601).
+We sincerely thank the authors for releasing their code and data.
+
 ## License
 
 Apache License 2.0. See [`LICENSE`](LICENSE).
